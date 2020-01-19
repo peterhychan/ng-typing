@@ -4,12 +4,14 @@
       <h1 class="title has-text-centered">ng-Typing Game</h1>
       <p class="has-text-centered">
         {{ randomText }}
+        <br />
+        <span [class]="compare(letter, textTyped[i])" *ngFor="let letter of textTyped.split(''); let i =index;"> {{letter}}</span>
       </p>
       <div class="field">
         <input class="input" (input)="onInput($event.target.value)" />
       </div>
       <div *ngIf="textTyped == randomText" class="box has-text-centered">
-        <h1 class="title">Success</h1>
+        <h1 class="success title">Success</h1>
       </div>
     </div>
   </div>
