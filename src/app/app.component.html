@@ -5,7 +5,7 @@
       <p class="has-text-centered">
         {{ randomText }}
         <br />
-        <span [class]="compare(letter, textTyped[i])" *ngFor="let letter of textTyped.split(''); let i =index;"> {{letter}}</span>
+        <span [class]="compare(letter, textTyped[i])" *ngFor="let letter of randomText.split(''); let i =index;"> {{letter}}</span>
       </p>
       <div class="field">
         <input class="input" (input)="onInput($event.target.value)" />

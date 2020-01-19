@@ -4,15 +4,14 @@
 
 .correct {
   color: green;
+}
+
+.incorrect {
+  color: red;
   font-weight: bold;
 }
 
 .success {
   background-color: green;
-  font-weight: bold;
-}
-
-.incorrect {
-  color: red;
   font-weight: bold;
 }
